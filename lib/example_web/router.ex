@@ -7,5 +7,6 @@ defmodule ExampleWeb.Router do
 
   scope "/api", ExampleWeb do
     pipe_through :api
+    get "/files/:id", FileController, :show
   end
 end
